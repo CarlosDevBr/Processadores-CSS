@@ -14,20 +14,24 @@ body{
 }
 
 h1 {
-    .cores();
-    text-shadow: 2px 1px 1px #7a7b7c;
+    .cores(50px, 'h1');
 }
 
 p {
-    .cores();
+    .cores(23px, 'p');
     b {
         color: @cor3;
         background-color: @cor2;
     }
 }
 
-.cores() {
+.cores(@size, @tag) {
     color: @cor;
-    background-color: @cor*0.2;
-    font-size: 23px;
+    font-size: @size;
+    & when (@tag = 'h1') {
+        text-shadow: 2px 1px 1px #7a7b7c;
+    } 
+    & when (@tag = 'p') {
+        background-color: lightgreen;
+    }
 }
