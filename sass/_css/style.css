@@ -1,10 +1,13 @@
 body {
   background-color: black;
+  color: lightgrey;
+  margin: 80px;
 }
 
-.drop-shadow {
+.sombra {
   text-shadow: 2px 1px 1px #ccc;
   text-decoration: underline;
+  color: lightblue;
 }
 
 h1 {
@@ -13,5 +16,9 @@ h1 {
 
 p {
   color: lightblue;
+}
+
+p b {
+  color: #00ff40;
 }
 /*# sourceMappingURL=style.css.map */

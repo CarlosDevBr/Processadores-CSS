@@ -1,19 +1,30 @@
-$blue: lightblue;
+$cor: lightblue;
+$cor2 : lightgrey;
 $background: black;
 
-body {
-    background-color: $background;
+@mixin fundoP($color){
+    background-color: $color;
 }
 
-.drop-shadow {
+body {
+    @include fundoP($background);
+    color: $cor2;
+    margin: 80px;
+}
+
+.sombra {
     text-shadow: 2px 1px 1px #ccc;
     text-decoration: underline;
+    color: $cor;
 }
 
 h1 {
-    color: $blue;
+    color: $cor;
 }
 
 p {
-    color: $blue;
+    color: $cor;
+    b {
+        color: rgb(0, 255, 64)
+    }
 }
