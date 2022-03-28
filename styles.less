@@ -1,6 +1,7 @@
-@blue : blue;
+@cor : blue;
 @cor2: green;
 @cor3: rgb(225, 225, 198);
+@width : 0.75;
 
 .drop-shadow {
     text-shadow: 2px 1px 1px #ccc;
@@ -8,11 +9,12 @@
 }
 
 h1 {
-    color: @blue;
+    color: @cor;
 }
 
 p {
-    color: @blue;
+    color: if(iscolor(@cor), @cor, red);
+    width: percentage(@width);
     b {
         color: @cor3;
         background-color: @cor2;
