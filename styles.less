@@ -2,21 +2,32 @@
 @cor2: green;
 @cor3: rgb(225, 225, 198);
 @width : 0.75;
+@cor_cinza_claro : rgb(210, 212, 208);
 
 .drop-shadow {
     text-shadow: 2px 1px 1px #ccc;
     text-decoration: underline;
 }
 
+body{
+    background-color: @cor_cinza_claro;
+}
+
 h1 {
-    color: @cor;
+    .cores();
+    text-shadow: 2px 1px 1px #7a7b7c;
 }
 
 p {
-    color: if(iscolor(@cor), @cor, red);
-    width: percentage(@width);
+    .cores();
     b {
         color: @cor3;
         background-color: @cor2;
     }
+}
+
+.cores() {
+    color: @cor;
+    background-color: @cor*0.2;
+    font-size: 23px;
 }
