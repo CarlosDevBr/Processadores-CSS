@@ -3,35 +3,28 @@
 @cor3: rgb(225, 225, 198);
 @width : 0.75;
 @cor_cinza_claro : rgb(210, 212, 208);
-
-.drop-shadow {
-    text-shadow: 2px 1px 1px #ccc;
-    text-decoration: underline;
-}
+@tamanho : 25px;
 
 body{
     background-color: @cor_cinza_claro;
 }
 
 h1 {
-    .cores(50px, 'h1');
+    .cores('h1');
 }
 
 p {
-    .cores(23px, 'p');
-    b {
-        color: @cor3;
-        background-color: @cor2;
-    }
+    .cores('p');
 }
 
-.cores(@size, @tag) {
-    color: @cor;
-    font-size: @size;
+.cores(@tag) {
+    color: @cor * 0.8;
+    font-size: @tamanho * 1.23;
+    & when (@tag = 'p') {
+        font-size: @tamanho*1.23;
+    }
     & when (@tag = 'h1') {
         text-shadow: 2px 1px 1px #7a7b7c;
-    } 
-    & when (@tag = 'p') {
-        background-color: lightgreen;
-    }
+        font-size: @tamanho*2.5;
+    }    
 }
