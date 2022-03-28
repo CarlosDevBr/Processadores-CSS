@@ -1,9 +1,3 @@
-body {
-  background-color: black;
-  color: lightgrey;
-  margin: 80px;
-}
-
 .sombra {
   text-shadow: 2px 1px 1px #ccc;
   text-decoration: underline;
@@ -14,11 +8,22 @@ h1 {
   color: lightblue;
 }
 
-p {
-  color: lightblue;
+a {
+  color: white;
+  background-color: lime;
 }
 
-p b {
+div p {
+  background-color: black;
+}
+
+div p b {
   color: #00ff40;
+}
+
+body {
+  background-color: black;
+  color: lightgrey;
+  margin: 80px;
 }
 /*# sourceMappingURL=style.css.map */
