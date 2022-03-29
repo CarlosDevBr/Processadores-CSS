@@ -1,7 +1,7 @@
 @import 'base', 'formatacaotxt';
 
 $cor: lightblue;
-$cor2 : lightgrey;
+$cor2 : light + grey;
 $background: black;
 $tamanho : 17;
 
@@ -25,5 +25,5 @@ body {
         color: darkblue;
         background-color: lightskyblue;
     }
-    margin: 80px;
+    margin: 10%*2;
 }
