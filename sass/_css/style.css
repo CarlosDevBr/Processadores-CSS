@@ -27,4 +27,22 @@ body {
   font-size: 17px;
   margin: 20%;
 }
+
+#div-1 {
+  font-size: 16px;
+  color: white;
+  background-color: #ff4d4d;
+}
+
+#div-2 {
+  font-size: 20px;
+  color: white;
+  background-color: #ff9999;
+}
+
+#div-3 {
+  font-size: 24px;
+  color: white;
+  background-color: #ffe6e6;
+}
 /*# sourceMappingURL=style.css.map */

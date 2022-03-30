@@ -28,3 +28,15 @@ body {
     }
     margin: 10%*2;
 }
+
+$corDiv : red;
+$size : 12px;
+
+@for $i from 1 through 3 {
+    $nome : '#div-' + $i;
+        #{$nome} {
+            font-size: $size + ($i*4);
+            color: white;
+            background-color: lighten($corDiv, $i * 15%);
+        }
+}
