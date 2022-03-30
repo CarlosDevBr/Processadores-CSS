@@ -1,7 +1,7 @@
 @import 'base', 'formatacaotxt';
 
 $cor: lightblue;
-$cor2 : light + grey;
+$cor2 : 'light' + grey;
 $background: black;
 $tamanho : 17;
 
@@ -21,6 +21,7 @@ body {
     @include fundoP($background);
     @if ($background == black){
         color: #{$cor2};
+        font-size: #{$tamanho+px};
     } @else {
         color: darkblue;
         background-color: lightskyblue;
